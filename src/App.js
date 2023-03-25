@@ -8,7 +8,7 @@ import { SpotifyUserContextProvider } from "./contexts/SpotifyUserContext";
 const App = () => {
   return (
     <SpotifyUserContextProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/SpotifyActivities">
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
