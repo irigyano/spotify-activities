@@ -16,7 +16,7 @@ const ArtistsCard = () => {
             return (
               <li
                 key={artist.id}
-                className="flex items-center m-1 rounded w-auto hover:bg-gray-300"
+                className="flex items-center m-1 rounded w-auto hover:bg-gray-300 overflow-x-auto no-scrollbar"
               >
                 <a
                   target="_blank"
@@ -24,21 +24,23 @@ const ArtistsCard = () => {
                   className="m-1 min-w-max"
                   href={artist.external_urls.spotify}
                 >
-                  <img className="h-16 w-16 rounded" alt="album_cover" src={artist.images[0].url} />
+                  <img
+                    className="h-16 w-16 rounded-full"
+                    alt="album_cover"
+                    src={artist.images[0].url}
+                  />
                 </a>
-                <div className="flex flex-col justify-center h-14  truncate ...">
-                  <a
-                    className="max-w-min hover:text-pink-700 font-semibold"
-                    target="_blank"
-                    rel="noreferrer"
-                    href={artist.external_urls.spotify}
-                  >
-                    {artist.name}
-                  </a>
-                  <span>
-                    {"Popularity(Global): "}
-                    {artist.popularity}
-                  </span>
+                <div className="h-14 flex items-center ">
+                  <div className="h-fit">
+                    <a
+                      className=" hover:text-pink-700 font-semibold"
+                      target="_blank"
+                      rel="noreferrer"
+                      href={artist.external_urls.spotify}
+                    >
+                      {artist.name}
+                    </a>
+                  </div>
                 </div>
               </li>
             );

@@ -23,7 +23,7 @@ const RecentPlayedCard = () => {
             return (
               <li
                 key={track.track.id}
-                className="flex items-center  m-1 rounded w-auto hover:bg-gray-300"
+                className="flex items-center  m-1 rounded w-auto hover:bg-gray-300 overflow-x-auto no-scrollbar"
               >
                 <a
                   target="_blank"
@@ -37,9 +37,9 @@ const RecentPlayedCard = () => {
                     src={track.track.album.images[0].url}
                   />
                 </a>
-                <div className="flex flex-col justify-center h-14  truncate ...">
+                <div className="flex flex-col justify-center h-14">
                   <a
-                    className="max-w-min hover:text-pink-700 font-semibold"
+                    className="hover:text-pink-700 font-semibold"
                     target="_blank"
                     rel="noreferrer"
                     href={track.track.external_urls.spotify}
@@ -51,9 +51,9 @@ const RecentPlayedCard = () => {
                     {track.track.artists.map((artist, index) => {
                       if (index === track.track.artists.length - 1) {
                         return (
-                          <div key={artist.id}>
+                          <div className="w-max" key={artist.id}>
                             <a
-                              className="max-w-min hover:text-pink-700 text-sm"
+                              className="hover:text-pink-700 text-sm"
                               target="_blank"
                               rel="noreferrer"
                               href={artist.external_urls.spotify}
@@ -64,9 +64,9 @@ const RecentPlayedCard = () => {
                         );
                       } else {
                         return (
-                          <div key={artist.id}>
+                          <div className="w-max" key={artist.id}>
                             <a
-                              className="max-w-min hover:text-pink-700 text-sm"
+                              className="hover:text-pink-700 text-sm"
                               target="_blank"
                               rel="noreferrer"
                               href={artist.external_urls.spotify}
