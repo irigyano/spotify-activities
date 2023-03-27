@@ -1,4 +1,3 @@
-<br />
 <h3 align="center">SpotifyActivities</h3>
   <p align="center">
     React app to show your Spotify activities such as favorite artists, songs and track history.
@@ -54,8 +53,7 @@ This is project is meant for practicing frontend development, using OAuth2 to au
 <!-- USAGE EXAMPLES -->
 
 ## Usage
-
-<img src="https://github.com/irigyano/SpotifyActivities/blob/main/screenshots/Home.png" height='400'>
+<h3 align="center"><img src="https://github.com/irigyano/SpotifyActivities/blob/main/screenshots/Home.png" height='450'></h3>
 
 Simply sign in with Spotify, once app receive the access token from Spotify API, it will redirect and render the data provided by Spotify.
 
