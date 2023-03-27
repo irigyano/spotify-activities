@@ -55,6 +55,8 @@ This is project is meant for practicing frontend development, using OAuth2 to au
 
 ## Usage
 
+<img src="https://github.com/irigyano/SpotifyActivities/blob/main/screenshots/Home.png" height='400'>
+
 Simply sign in with Spotify, once app receive the access token from Spotify API, it will redirect and render the data provided by Spotify.
 
 Since all the data in this app is basicly rely on Spotify API, check [Spotify Authorization Code Flow](https://developer.spotify.com/documentation/web-api/tutorials/code-flow) for more information, this app is using the Implicit Grant Flow so there's no refresh token involved.
