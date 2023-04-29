@@ -1,6 +1,6 @@
 <h3 align="center">SpotifyActivities</h3>
   <p align="center">
-    React app to show your Spotify activities such as favorite artists, songs and track history.
+    React app to show your Spotify activities such as favorite artists, songs and tracks history.
     <br />
     <br />
     <a href="https://irigyano.github.io/SpotifyActivities">View Demo</a>
@@ -11,7 +11,7 @@
 
 ## About The Project
 
-This is project is meant for practicing frontend development, using OAuth2 to authenticate user and interact with 3rd party API, fetching data with axios and rendering the data with React, styling with Tailwind CSS.
+This is project is meant for practicing frontend development, using OAuth2 to authenticate user and interact with Third-party API, fetching data with axios and rendering the data by React, styling with Tailwind CSS.
 
 ### Built With
 
@@ -53,30 +53,13 @@ This is project is meant for practicing frontend development, using OAuth2 to au
 <!-- USAGE EXAMPLES -->
 
 ## Usage
-<h3 align="center"><img src="https://github.com/irigyano/SpotifyActivities/blob/main/screenshots/Home.png" height='450'></h3>
-
 Simply sign in with Spotify, once app receive the access token from Spotify API, it will redirect and render the data provided by Spotify.
 
 Since all the data in this app is basicly rely on Spotify API, check [Spotify Authorization Code Flow](https://developer.spotify.com/documentation/web-api/tutorials/code-flow) for more information, this app is using the Implicit Grant Flow so there's no refresh token involved.
 
 Modifiy `LoginButton.jsx` SCOPE to gain access to more data from the API. Check [Scopes](https://developer.spotify.com/documentation/web-api/concepts/scopes).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+(Do note that if the app is under developing mode in Spotify dashboard, all the user using the app should be whitelisted.)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
