@@ -3,7 +3,6 @@
     React app to show your Spotify activities such as favorite artists, songs and tracks history.
     <br />
     <br />
-    <a href="https://irigyano.github.io/SpotifyActivities">View Demo</a>
   </p>
 </div>
 
@@ -60,12 +59,6 @@ Since all the data in this app is basicly rely on Spotify API, check [Spotify Au
 Modifiy `LoginButton.jsx` SCOPE to gain access to more data from the API. Check [Scopes](https://developer.spotify.com/documentation/web-api/concepts/scopes).
 
 (Do note that if the app is under developing mode in Spotify dashboard, all the user using the app should be whitelisted.)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
